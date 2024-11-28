@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="m-8">
+  <!---header section start-->
+  <header>
+    <div class="navbar bg-teal-200">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+         
+        </div>
+        <a class="btn btn-ghost text-xs lg:text-xl text-black">Interactive <br>Geometry Genius</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        
+      </div>
+      <div class="navbar-end">
+        <a class="btn text-white">Blog</a>
+      </div>
+    </div>
+
+  </header>
+  <!---header section end-->
+
+
+
+
+   <!--main section start-->
+  <main class=" mt-10">
+    <!--main container start-->
+   <div class="flex flex-col md:flex-row gap-2 lg:gap-5">
+
+    <!--card container start-->
+    <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-72">
+       <!---Triangel card-->
+    <div class="card bg-base-100 w-64 shadow-xl">
+      <img src="./download.png" alt="">
+      <div class="card-body">
+        <h2 class="card-title justify-center">Traiangel</h2>
+        <p class="text-center">Area (A) = 0.5 x b x h </p>
+        <div class="flex gap-4">
+          <input id="trainangel-bese" class= "w-16 p-2 " type="text"placeholder="b">
+        <span>cm</span>
+        <input id="trainangel-hight" class="w-16 p-2 " type="text" placeholder="h">
+        <span>cm</span>
+        
+        </div>
+        <div class="card-actions ">
+          <button onclick=" traiangel()"  class="btn btn-primary w-full">Calculate</button>
+         
+        </div>
+      </div>
+    </div>
+     
+    <!---Rectangel card-->
+    <div class="card bg-base-100 w-64 shadow-xl">
+      <img class="h-64" src="./images.png" alt="">
+      <div class="card-body">
+        <h2 class="card-title justify-center">Rectangel</h2>
+        <p>Area (A) = w x I</p>
+       <div class="flex gap-2">
+        <input id="lenght-input" class="w-16 p-2"  type="text" placeholder="langht">
+        <span>cm</span>
+        <br>
+        <input id="width-input" class="w-16 p-2" type="text"placeholder="width">
+        <span>cm</span>
+       </div>
+        <div class="card-actions ">
+          <button   onclick="Reatangelcalculation()" class="btn btn-primary w-full">Calculate</button>
+        </div>
+      </div>
+    </div>
+
+
+    <!---perallelogram card-->
+    <div class="card bg-base-100 w-64 shadow-xl">
+      <img class="h-64" src="./perallelogram.jpg" alt="">
+      <div class="card-body">
+        <h2 class="card-title justify-center">perallelogram</h2>
+        <p>Area (A) = b  x h </p>
+        <div class="gap-10">
+          <input id="base" class="w-16 p-2" type="text"placeholder="b">
+          <span>cm</span>
+          <input id="hight" class="w-16 p-2" type="text" placeholder="h">
+          <span>cm</span>
+        </div>
+        <div class="card-actions ">
+          <button onclick="peallelogram()" class="btn btn-primary w-full">Calculation</button>
+        </div>
+      </div>
+    </div>
+
+    
+
+    </div>
+
+
+    <!--Right site container start-->
+    <div class=" w-auto lg:w-96">
+
+    </div>
+    <!--ariya taitell-->
+    <div class="text-2xl border-2 w-96  border-gray-500 rounded-md p-2 lg:p-2">
+      <h3 class="text-center">Ariya Calculation</h3>
+      <br>
+     
+      <div >
+        <p> Traiangel Area : <span id="calculate-info"></span> <span>cm</span><sup>2</sup></p>
+      </div>
+      <br>
+      
+<div>
+  <p>Ractangel Area: <span id="calculateInfo"></span> <span>cm</span><sup>2</sup></p>
+</div>
+
+ <br>
+ <div>
+  <p> perallelogram Area: <span id="peallelogram"></span> <span>cm</span><sup>2</sup></p>
+</div>
+      
+    </div> 
+
+
+   </div>
+ 
+
+   
+  </main>
+   <!--main section end-->
+
+
+
+
+    <!--footer section start-->
+  <footer>
+
+  </footer>
+   <!--foter section start-->
+ <script src="script/Traiangel.js"></script>
+<script src="script/Reatangel.js"></script>
+<script src="script/perallelogram.js"></script>
+
+ 
+</body>
+</html>
